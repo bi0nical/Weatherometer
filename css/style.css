@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  text-decoration: none; }
+
+html {
+  font-size: 65.5%; }
+
+a {
+  color: inherit; }
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+
+.logo {
+  font-family: monospace;
+  font-size: 2.4rem;
+  color: white; }
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10rem; }
+
+.nightBG {
+  background: linear-gradient(135deg, #100f33 0%, #0b0a24 100%); }
+
+.dayBG {
+  background: linear-gradient(135deg, #97d7ff 0%, #8ad9fd 100%); }
+
+.pinkBG {
+  background: linear-gradient(156deg, #fc97f7, #ff86f9); }
+
+.weather-widget {
+  width: 60rem;
+  min-height: 30rem;
+  background: rgba(255, 255, 255, 0.377);
+  backdrop-filter: blur(50%);
+  border: 0.2rem solid rgba(255, 255, 255, 0.082);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  border-radius: 5rem; }
+
+.widget-t {
+  height: 7.5rem;
+  width: 30rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .widget-t__country {
+    padding-left: 0.5rem; }
+
+.widget-l {
+  height: 15rem;
+  width: 30rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .widget-l__icon {
+    width: 15rem;
+    height: 15rem;
+    background-position: center;
+    background-size: 20rem; }
+
+.widget-r {
+  height: 15rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem; }
+  .widget-r__temp {
+    padding: 3rem 0 0.5rem 0;
+    font-size: 2.4rem; }
+  .widget-r__weather {
+    padding: 0 0 1rem 0;
+    font-size: 1.8rem; }
+  .widget-r__wind {
+    padding: 0 0 1rem 0;
+    font-size: 1.4rem;
+    color: white; }
+  .widget-r__humidity {
+    padding: 0 0 1rem 0;
+    font-size: 1rem;
+    color: white; }
+  .widget-r__high {
+    color: #c95538;
+    font-size: 1.4rem; }
+  .widget-r__low {
+    padding-right: 1rem;
+    color: #385ac9;
+    font-size: 1.4rem; }
+
+.widget-b {
+  height: 7.5rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper--row {
+  display: flex; }
+
+.wrapper--temp {
+  padding-bottom: 2rem; }
+
+.wrapper--widget {
+  width: 60rem; }
+
+/*# sourceMappingURL=style.css.map */

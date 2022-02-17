@@ -1,0 +1,11 @@
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin glassmorphism {
+    background: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(50%);
+    border: 0.2rem solid rgba(255, 255, 255, 0.082);
+}

@@ -1,0 +1,14 @@
+.nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.logo{
+    font-family: $font-display;
+    font-size: $text-large;
+    color: white;
+}

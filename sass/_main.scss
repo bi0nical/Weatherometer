@@ -1,0 +1,114 @@
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    // background: linear-gradient(156deg, rgb(255, 134, 249), pink);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+}
+
+.nightBG{
+    background: linear-gradient(135deg, rgba(16,15,51,1) 0%, rgb(11, 10, 36) 100%);
+}
+
+.dayBG{
+    background: linear-gradient(135deg, #97d7ff 0%, #8ad9fd 100%);
+}
+
+.pinkBG{
+    background: linear-gradient(156deg, rgb(252, 151, 247), rgb(255, 134, 249));
+}
+
+.weather-widget{
+    width: 60rem;
+    min-height: 30rem;
+    @include glassmorphism;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-display;
+    border-radius: 5rem;
+}
+
+.widget-t{
+    height: 7.5rem;
+    width: 30rem;
+    // border-bottom: 0.25rem solid lightgrey;
+    font-size: $text-medium;
+    @include center-flex;
+    &__country{
+        padding-left: 0.5rem;
+    }
+}
+
+.widget-l{
+    height: 15rem;
+    width: 30rem;
+    font-size: $text-medium;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &__icon{
+        width: 15rem;
+        height: 15rem;
+        background-position: center;
+        background-size: 20rem;
+        // border: solid black 0.1rem;
+    }
+
+}
+
+.widget-r{
+    height: 15rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    &__temp{
+        padding: 3rem 0 0.5rem 0;
+        font-size: $text-large;
+    }
+    &__weather{
+        padding: 0 0 1rem 0;
+        font-size: $text-medium;
+    }
+    &__wind{
+        padding: 0 0 1rem 0;
+        font-size: $text-small;
+        color: white;
+    }
+    &__humidity{
+        padding: 0 0 1rem 0;
+        font-size: $text-xsmall;
+        color: white;
+    }
+    &__high{
+        color: rgb(201, 85, 56);
+        font-size: $text-small;
+    }
+    &__low{
+        padding-right: 1rem;
+        color: rgb(56, 90, 201);
+        font-size: $text-small;
+    }
+}
+
+.widget-b{
+    height: 7.5rem;
+    width: 30rem;
+    // border-top: 0.25rem solid lightgrey;
+    @include center-flex;
+}
+
+.wrapper--row{
+    display: flex;
+}
+
+.wrapper--temp{
+    padding-bottom: 2rem;
+}
+
+.wrapper--widget{
+    width: 60rem;
+}
